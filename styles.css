@@ -39,6 +39,7 @@ ul {
   border-radius: 24px;
   height: 535px;
   width: 368px;
+  margin-top: 250px;
 }
 
 .products__item:nth-child(2) {
@@ -112,4 +113,31 @@ ul {
   position: absolute;
   top: 0;
   left: 12px;
+}
+.products__item::before {
+  content: "";
+  position: absolute;
+  left: 205px;
+  top: 190px;
+  width: 368px;
+  height: 394px;
+  background-image: url(./images/icecream.png);
+}
+.products__item:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: 600px;
+  top: 190px;
+  width: 368px;
+  height: 394px;
+  background-image: url(./images/icecoffee.png);
+}
+.products__item:nth-child(3):before {
+  content: "";
+  position: absolute;
+  left: 1000px;
+  top: 190px;
+  width: 368px;
+  height: 394px;
+  background-image: url(./images/milkshake.png);
 }
