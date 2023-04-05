@@ -98,13 +98,23 @@ ul {
   border: none;
   left: 120px;
   top: 50px;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 .products__svg {
   height: 18px;
   width: 30px;
-  fill: red;
+  fill: #d41443;
+  display: flex;
 }
+
+.products__button:hover {
+  transform: rotate(-90deg);
+}
+
 .points,
 .points::before,
 .points::after {
@@ -159,6 +169,7 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 @media screen and (min-width: 768px) {
   .products__list {
     display: flex;
@@ -208,6 +219,13 @@ ul {
     border: none;
     left: 90px;
     top: 40px;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+  .products__button:hover {
+    transform: rotate(-90deg);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -257,5 +275,12 @@ ul {
     border: none;
     left: 160px;
     top: 100px;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+  .products__button:hover {
+    transform: rotate(-90deg);
   }
 }
